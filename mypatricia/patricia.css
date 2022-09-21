@@ -1,0 +1,713 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: gilroybold;
+  src: url("Gilroy-font-free/Gilroy-ExtraBold 800.ttf") format(truetype);
+}
+
+@font-face {
+  font-family: gilroylight;
+  src: url("Gilroy-font-free/Gilroy-Light 300.ttf") format(truetype);
+}
+
+html, body {
+  font-family: gilroylight;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.container {
+  min-width: 200px;
+  display: -ms-grid;
+  display: grid;
+}
+
+.firstsection {
+  color: #ffffff;
+  background-image: url(https://images.ctfassets.net/pmphlmr7rdvc/sCnC5rEgRDygFcN4B7bEM/af7e3a7d985559c263b769cd8e1cb83d/home-hero-v2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0% 5%;
+}
+
+header {
+  padding-top: 1em;
+  color: #ffffff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-bottom: 5em;
+}
+
+.sidemenu {
+  float: right;
+}
+
+header .nav_div, .header_buttons {
+  display: none;
+}
+
+.headerdiv {
+  margin-bottom: 1.5em;
+}
+
+.header {
+  display: block;
+  background-color: white;
+  color: black;
+  padding-bottom: 1em;
+  position: relative;
+  top: 0;
+  z-index: 2;
+}
+
+.nav-div, .header-buttons {
+  display: block;
+  margin-left: 1em;
+}
+
+.logo {
+  color: #ffffff;
+}
+
+.nav_links {
+  display: block;
+  list-style: none;
+  margin-bottom: 4em;
+}
+
+.nav_items {
+  padding: 0.5rem 0.75rem;
+}
+
+.nav_items:hover {
+  background-color: rgba(0, 97, 86, 0.1);
+}
+
+#button1 {
+  display: block;
+  padding: 0.7em 0.8em;
+  color: #006156;
+  background-color: #ffffff;
+  border: 1px solid  #006156;
+  margin-bottom: 1em;
+}
+
+#button2 {
+  display: block;
+  padding: 0.7em 1em;
+  color: #000000;
+  background-color: #ffCE00;
+  border: 1px solid #ffCE00;
+}
+
+#button1, #button2 {
+  border-radius: 5px;
+}
+
+.dropdown {
+  display: none;
+}
+
+.dropdown_nav:hover .dropdown {
+  display: block;
+  position: absolute;
+  background-color: #ffffff;
+  margin: 1em;
+  color: #000000;
+  border-radius: 10px;
+  padding: 1em;
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.dropdown li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+  color: #111827;
+}
+
+.dropdown svg {
+  margin-right: 10px;
+}
+
+.firstmain1, .firstmain3 {
+  display: none;
+}
+
+.firstmain2 {
+  text-align: center;
+  margin-bottom: 6em;
+  word-break: break-word;
+  max-width: 750px;
+  margin: 0px auto 100px auto;
+}
+
+.firstmain2 h1 {
+  color: white;
+  font-weight: bold;
+}
+
+.firstmain2 p {
+  font-size: 0.9rem;
+  margin-top: 1em;
+}
+
+.firstmain2img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 1em;
+  margin: 3em auto 0;
+  width: 90%;
+  height: auto;
+}
+
+.firstmain2img img {
+  width: 40%;
+}
+
+.secondsection {
+  z-index: 1;
+  position: relative;
+  background-image: url(https://www.mypatricia.co/_nuxt/fe78e083a17664d9e116c4fa6ace4f6b.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5% 3%;
+}
+
+.secondsection h1 {
+  line-height: 3.875rem;
+  word-wrap: break-all;
+  color: #1D1E2C;
+}
+
+.secondsection h1 span, .fifthsection h1 span {
+  color: #006156;
+}
+
+.secondsection p {
+  font-size: 0.9rem;
+  color: #9da8b6;
+  max-width: 400px;
+  margin-top: 2em;
+  line-height: 1.5;
+}
+
+.secondsection > div {
+  margin: 2em auto;
+  border: 1px solid #ffffff;
+  border-radius: 0.75rem;
+  background: #ffffff;
+  width: 90%;
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.secondsection > div > img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: auto;
+  border-radius: 0.75rem;
+}
+
+.secondsection > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2em;
+  color: #006156;
+  padding: 2em;
+  font-size: 0.7rem;
+}
+
+.secondsection > div > div > img {
+  width: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.thirdsection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  background-color: #FFFAE5;
+  padding: 8% 5%;
+}
+
+.thirdsection div h1 {
+  font-size: 2.8rem;
+  color: #006156;
+  font-weight: bold;
+}
+
+.thirdsection div p {
+  font-size: 0.9rem;
+  color: #9da8b6;
+  margin-top: 1em;
+  line-height: 1.5;
+}
+
+.thirdsection div button {
+  display: block;
+  margin: 1rem 0;
+  background-color: #FFCE00;
+  border: 1px solid #FFCE00;
+  border-radius: 5px;
+  padding: 0.7rem 1.5rem;
+}
+
+.thirdsection div img {
+  width: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.fourthsection {
+  padding: 5em 4em 10em 4em;
+  background-image: url(https://www.mypatricia.co/_nuxt/65d905fbe0f0a0bd10dbe0a9e7613790.svg), url(https://www.mypatricia.co/_nuxt/0d5cf744b7378041b4fa0b458ea7c1d8.svg);
+  background-color: #006156;
+  background-repeat: no-repeat;
+  background-position: 0 100%,100% 100%;
+  background-size: auto 40%,auto 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fourthsection > div:last-child {
+  display: none;
+}
+
+.fourthsection h1 {
+  font-weight: bold;
+}
+
+.fourthsection p {
+  margin-top: 1.2em;
+}
+
+.fifthsection {
+  padding: 3.5em 3em 2em 3em;
+  background-image: url(https://www.mypatricia.co/_nuxt/c8717415146e5d2de3760ba1a67c9adc.svg), url(https://www.mypatricia.co/_nuxt/f4ae7a3429d87e5a0a31836fc46c043b.svg);
+  background-position: 0 100%, calc(100% + 45px) 100px;
+  background-size: auto,150px;
+  background-repeat: no-repeat;
+  background-color: #f9fafc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fifthsection > div, .sixthsection > div:first-child > div {
+  display: -ms-grid;
+  display: grid;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.fifthsection > p, .sixthsection > div:first-child > p {
+  color: #9da8b6;
+  margin-top: 1.2em;
+}
+
+.fifthsection > div > div, .sixthsection > div:first-child > div > div {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.8em;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  background: #FFFFFF;
+  gap: 0.5em;
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.fifthsection > div > div img, .sixthsection > div:first-child > div > div > img {
+  width: 20px;
+  height: auto;
+}
+
+.sixthsection {
+  padding: 10% 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  gap: 2em;
+}
+
+.sixthsection > div:last-child {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 40%;
+      grid-template-columns: 40% 40%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  background-image: url(https://www.mypatricia.co/_nuxt/46ba6fad676c644a0e7528079da40846.svg);
+  background-repeat: no-repeat;
+  padding-top: 3rem;
+  background-size: 18%;
+  background-position: top;
+}
+
+.sixthsection > div:last-child > div:first-child > div {
+  position: relative;
+  width: 30%;
+  right: 10%;
+  bottom: 90%;
+}
+
+.sixthsection > div:last-child > div:last-child img {
+  width: 100%;
+}
+
+.sixthsection > div:last-child > div {
+  width: 90%;
+}
+
+.sixthsection > div:last-child > div img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.seventhsection {
+  padding: 3.5em 4em 2em 4em;
+  background-image: url(https://www.mypatricia.co/_nuxt/632256e7cb31bcc22e48bca187eaa7b5.svg);
+  background-position: 0 100%, calc(100% + 45px) 100px;
+  background-size: auto,150px;
+  background-repeat: no-repeat;
+  background-color: #def5f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.seventhsection div h4 {
+  margin: 2em 0;
+  font-size: 1.375rem;
+}
+
+.seventhsection div p {
+  font-size: 0.9rem;
+  color: #9da8b6;
+}
+
+.seventhsection > div > div {
+  width: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: auto;
+  margin: auto;
+}
+
+.seventhsection > div > div > img {
+  width: 100%;
+}
+
+.eigthsection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  text-align: center;
+  padding: 3.5em 1em;
+  max-width: 1000px;
+  font-weight: bold;
+}
+
+.ninthsection {
+  display: -ms-grid;
+  display: grid;
+  padding: 3.5em 4em 0 4em;
+  background-image: url(https://www.mypatricia.co/_nuxt/c7da3618bffd4591bf90118db3318c15.svg);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.ninthsection div h3 {
+  font-size: 2.7rem;
+  line-height: 1.2;
+  margin-bottom: 1em;
+}
+
+.ninthsection div p {
+  line-height: 2;
+}
+
+.ninthsection div span {
+  color: #FFCE00;
+}
+
+.ninthsection > div > div {
+  margin-top: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5em;
+}
+
+.ninthsection button:first-child {
+  background: #FFCE00;
+  color: #1D1E2C;
+  padding: 0.75em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #FFCE00;
+  border-radius: 5px;
+}
+
+.ninthsection button:last-child {
+  background: transparent;
+  color: #ffffff;
+  padding: 0.75em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.ninthsection > div:last-child {
+  position: relative;
+  text-align: center;
+  width: 90%;
+  height: auto;
+  top: 30%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.ninthsection > div:last-child img {
+  width: 100%;
+}
+
+.tenthsection {
+  padding: 6em 2em 0 2em;
+}
+
+.tenthsection h1 {
+  text-align: center;
+}
+
+.tenthsection > div > div {
+  display: -ms-grid;
+  display: grid;
+  gap: 1em;
+}
+
+.tenthsection > div > div > div {
+  margin: 2em auto 0 auto;
+  border: 1px solid #ffffff;
+  border-radius: 0.75rem;
+  background: #ffffff;
+  width: 100%;
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.tenthsection > div > div > div > div {
+  padding: 1em;
+  display: block;
+}
+
+.tenthsection > div > div > div > div span {
+  font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.7em;
+}
+
+.tenthsection > div > div > div > div h4 {
+  color: #006156;
+  margin-bottom: 0.5em;
+  font-size: 0.9rem;
+}
+
+.tenthsection > div > div > div > div > p {
+  font-size: 0.7rem;
+  line-height: 1.4;
+  text-overflow: clip;
+  overflow-y: hidden;
+}
+
+.tenthsection > div > div > div > div span .fa-circle {
+  font-size: 0.4em;
+  color: #006156;
+  margin: 0 8px;
+}
+
+.tenthsection > div > div > div img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 130px;
+  border-radius: 0.75rem;
+}
+
+.tenthsection button {
+  display: block;
+  max-width: 150px;
+  margin: 1rem auto;
+  background-color: #FFCE00;
+  border: 1px solid #FFCE00;
+  border-radius: 5px;
+  padding: 0.7rem 1.5rem;
+}
+
+.tenthsection > div:last-child {
+  padding-top: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+}
+
+.tenthsection > div:last-child img {
+  width: 100%;
+}
+
+.tenthsection > div:last-child p {
+  font-size: 0.9rem;
+  color: #9da8b6;
+  line-height: 1.5;
+}
+
+.tenthsection > div:last-child h1 {
+  color: #006156;
+}
+
+.tenthsection > div:last-child > div:last-child {
+  width: 50%;
+  margin: auto;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.tenthsection > div:last-child > div:last-child video {
+  width: 100%;
+}
+
+@media (min-width: 320px) {
+  .fifthsection > div > div, .sixthsection > div:first-child > div > div {
+    max-width: 300px;
+  }
+  .sixthsection > div:last-child > div img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+@media (max-width: 420px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+  .secondsection h1 {
+    line-height: 1.5;
+  }
+  .thirdsection div h1 {
+    font-size: 1.8rem;
+  }
+  .ninthsection div h3 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 1em;
+  }
+  .ninthsection {
+    padding: 3.5em 2em 0 2em;
+  }
+  .ninthsection div p {
+    line-height: 1.2;
+  }
+  .seventhsection > div > div {
+    width: 40%;
+  }
+}
+/*# sourceMappingURL=patricia.css.map */
